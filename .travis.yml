@@ -9,7 +9,7 @@ language: objective-c
 osx_image: xcode7.3
 
 xcode_project: libmuse_5.8.0/ios/examples/MuseStatsIos/MuseStatsIos.xcodeproj
-xcode_scheme: MuseStatsIos
+xcode_scheme: MuseStatsIos2
 
 #before_script:
 #- ./scripts/travis/add-key.sh
