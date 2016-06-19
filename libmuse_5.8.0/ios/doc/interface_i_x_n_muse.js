@@ -1,0 +1,26 @@
+var interface_i_x_n_muse =
+[
+    [ "connect", "interface_i_x_n_muse.html#a254602fc5d5f1426b5bdacca0c084223", null ],
+    [ "disconnect:", "interface_i_x_n_muse.html#a384965deb07c11efb6eae04ec03eefa2", null ],
+    [ "enableDataTransmission:", "interface_i_x_n_muse.html#ab107bba688873d5e1a58b5ff41a6c42c", null ],
+    [ "execute", "interface_i_x_n_muse.html#a77a140df4e92f671b6d308ad76259759", null ],
+    [ "getConnectionState", "interface_i_x_n_muse.html#a54129a04c4c87e9727870006b59f1806", null ],
+    [ "getLastDiscoveredTime", "interface_i_x_n_muse.html#a370666b33062cd23ad120fa30e0bf88d", null ],
+    [ "getMacAddress", "interface_i_x_n_muse.html#ae296bb2fd0ec50bea5408a21b01aa9ec", null ],
+    [ "getMuseConfiguration", "interface_i_x_n_muse.html#a874f505fd9da1f51a9cec5f17b53ad66", null ],
+    [ "getMuseVersion", "interface_i_x_n_muse.html#ab93f7056fd65fbe528a238795de3eb1d", null ],
+    [ "getName", "interface_i_x_n_muse.html#a34ffb92cf5cb4c7d983d23eff6243bd4", null ],
+    [ "getRssi", "interface_i_x_n_muse.html#aa44684818c6b641d79ff35e139e59700", null ],
+    [ "isLowEnergy", "interface_i_x_n_muse.html#a6d791093e1613736b5618cbd9f90e20d", null ],
+    [ "registerConnectionListener:", "interface_i_x_n_muse.html#aef004ebeb82b7acf9350c233a6fabfb8", null ],
+    [ "registerDataListener:type:", "interface_i_x_n_muse.html#a44dd1a21678dcd360a1b9f355183e0bf", null ],
+    [ "registerErrorListener:", "interface_i_x_n_muse.html#af882280e2c1b3df0cc69b129f81ff3ff", null ],
+    [ "runAsynchronously", "interface_i_x_n_muse.html#a2608be4ba0417fba35720b4012d91db8", null ],
+    [ "setNotchFrequency:", "interface_i_x_n_muse.html#a6b1689d992082b2dfef655d41a96f8bf", null ],
+    [ "setNumConnectTries:", "interface_i_x_n_muse.html#a1d19ddf74f568dfa69e2e90537caebd3", null ],
+    [ "setPreset:", "interface_i_x_n_muse.html#a9b60dc6d694398aeb34814b86490c8d4", null ],
+    [ "unregisterAllListeners", "interface_i_x_n_muse.html#a05184172ee998e769090479cc33441a7", null ],
+    [ "unregisterConnectionListener:", "interface_i_x_n_muse.html#a46853177af4d31a376815da9ff27890d", null ],
+    [ "unregisterDataListener:type:", "interface_i_x_n_muse.html#ac6b6aeba4a140e752c975b992ed41b48", null ],
+    [ "unregisterErrorListener:", "interface_i_x_n_muse.html#a9748a3544fa8d938b8cdbf4121424be1", null ]
+];
