@@ -53,4 +53,3 @@ notifications:
   email:
     recipients:
       - daniel@brainmodes.net
-    on_success: always
