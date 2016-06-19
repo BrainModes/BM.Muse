@@ -8,7 +8,7 @@ language: objective-c
 # Latest Xcode
 osx_image: xcode7.3
 
-xcode_project: libmuse_5.8.0/ios/examples/MuseStatsIos/MuseStatsIos.xcodeproj
+xcode_project: libmuse_5.8.0/ios/examples/MuseStatsIos/MuseStatsIos2.xcodeproj
 #xcode_scheme: MuseStatsIos
 
 #before_script:
