@@ -49,7 +49,7 @@ branches:
 notifications:
   slack:
     secure: LLnhnu2+d6jcJ1T1uF+qvYX+FvNvj+bXia84AmuzSrfAxrqd5K9a6v62LFyA5u+2I5ZdQ4dLBlSuy3y3nSgM+io2/sIkxUWJmozXk9Z7HhlBwyDum7SBor30lQ6YsL2+19nLDv10QbAYP3IedSXJLVQXMknWhujMExnf88ohTdtMjqMQJRUV/9NX/Habh4nB61lrqW3lEkNky0RJAQ22SqpBepVLisUwOfDCj4E78VtGRodGEAwFR+0IYWRN4KXoxivDfobw2MaYctXr5koBHwtv8fe/tu3oX0Dqmzg2hB9YJeJxGpITXc24FbaJAmE26rJxuLRizqZK2QKRCVbZeNY0pKwgYOtF7QjELuAL5BwQ3h/gRu0lVTmLmRea9Grmez/wGz9yAmBHVcZiXeOzYtCOnR9WtrJHNCSK7K47JOzXYwsT2DuQngAHtSEpH6LxsE8iN+NWcZa/E73RwXsjwA2KiJMIh3xZcleSwOUu4je9fTKN8bvi0hQfBbgXKVKqDx3jgTAhmdhH9psWhFb5yCfYTcgLrkgmF5BT9IUzzvR33mZzOBloG0x4AzOc3mk/fJ4bCPdfkpu7RYvuaR2d57Go/ftrCgR9h8IfjxJ2m8H/wbF3wvG2EbW/gDQ1cz5mCCJ1raH5a1GKImcAgY/K9sATMIvUulDmR5V9kmEEXIo=
-#    on_success: always
+    on_success: always
   email:
     recipients:
       - daniel@brainmodes.net
