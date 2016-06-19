@@ -1,0 +1,36 @@
+# Compile MuseStatsIos.xcodeproj and deploy binary libMuseStatsIos.a to BM.Library/releases
+# https://docs.travis-ci.com/user/customizing-the-build/
+
+# Objective-C support
+language: objective-c
+
+# Latest Xcode
+osx_image: xcode7.3
+
+xcode_project: libmuse/libmuse_5.8.0/ios/examples/MuseStatsIos/MuseStatsIos.xcodeproj
+xcode_scheme: MuseStatsIos
+
+before_deploy:
+  - export RELEASE_PKG_FILE=$(ls *)
+  - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
+
+deploy:
+  provider: releases
+  api_key:
+    secure: Mp5qTPzTyjBp40XQWymKbEW6IZiQpxwljDTF3pLs0kNEuT9EW41apgVLKNNDgmlSnHjWlxx5O6SzBCPLEu62R+yoo8vhG837fgf1M01mBC4IYfCfy7dFoHqtH8qZ0hgUFawx12MB5YFAQMYes0eeIo2YMatQxAFW8avqbrTjk3spDWuG4jSz+opvNmKGlVeLPxgnoadGbYUTEiqJswBllfc8pyVFiJGgHagQ74B1c4ZtwCWbO0tmY007wj5BAX5VkHlPtfK045vW44A86CqKDgdfTUK+k90sLqLuNujAmNYGC38SOLREytVdBce4w/xRr3Y+YzRcCr3H9zP8BRVvu8kwUgy5VcyMaS/ZK4aUH2SczTaz1gG086RoBERVkcHwMxbMusiwpjOq6LWHb/wzsPmSXJ9SMUY5/gCQAm9uLkf3rvDOekQL9s0XGgq6WBEW4bI+DPnKdWGk5s/qoZkAGKqfw9ywVlFpZZNSi8QFGA9IduKbdJ3VUwdUZTeWrzLVghLF/CDUbPsZv/7CZkZluHWNrz9TItVBD1Ter0PhSv3N/y/BuYlCj0oc/WHbJOMOFLMXvDdOALCTdt2cpBmBwAVNf199dch/8UGCAZV4j1xdTQd75qTdSpjaYIRUawRf/KPktIfF6s6E0eAbjd3xmsmRYVxgJvDonGVJGc+EePQ=
+  file: MuseStatsIos.app
+  skip_cleanup: true
+  on:
+    repo: BrainModes/BM.Muse
+    tags: true
+
+branches:
+  only:
+    - master
+    - stable
+    - release
+
+notifications:
+  slack:
+    secure: gePFRF8U5smC+927L1vwqSP/PQKj3E3+LjBI2HaVekgyJOQvoUDmMIgUMGeDTKTas5zcjlQek3NwM+yzJr9QCrJkkHzzO9dMaGUSMcbM4m4yuVmC3vU5GNxB6/rkQQ2y1O9RqTX8h+sDNB0TtKa9FMdVoOXufaAjgLeeDzRhVpBHlYYCk5F5M0ldTj0z0kwnQb+QVFKT0X4IoRln2fVjCMS/8Omy6kNYCB50Lzk48xqb3HRradYR7mRZHavJDk2zyj/k6mnhA+g3rV5pd51G3FJTisQ6sjZQ087/4GtdREkOcrEeKlbdSr44qJWjp2bzw3P6pfiEC5VncplVCBxp6Z0/304HuozhEMYyp0OzjziP7ACrTo1FYQu699b240QR/2O5WSFX+1rtWO0VGhF5GV9HjhroWhWyxFG0vmX7ScghgW4ldg2Bklp4J80mDAAxc6xzNdzk11W7zrSI3nLQb22M/d2R/l+dikqfhY3HwOJhpdBeU+0jM/FBjHTg8LBNwvk/b/6BGJY4VgHK7JqS2N3r9nZMT/u1fAYoO2hSn/2WzE3QtUikvbb0EPK5uO09QrzL3s4WNAcg8oxGyGWdkdwG2CABoCwITL6n9/n1e/v8HChj5oLwT1BIKRCLNDbPst25KQftOqXPEkCbADPda4lZUcf0Uc43tIWEEECxNVY=
+    on_success: always
