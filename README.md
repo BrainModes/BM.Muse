@@ -2,3 +2,6 @@
 
 # BM.Muse
 Test repo for CI workflow
+
+* Just for testing Travis CI without having them the lifetime compilations deducted.
+* It’s public, should never contain confidential code.
