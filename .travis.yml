@@ -1,6 +1,13 @@
-# Compile MuseStatsIos.xcodeproj and deploy binary libMuseStatsIos.a to BM.Library/releases
-# https://docs.travis-ci.com/user/customizing-the-build/
-# Deploy an iOS app to testflight https://gist.github.com/johanneswuerbach/5559514
+
+############################################
+#  ENVIRONMENT SETUP
+############################################
+
+
+env:
+  matrix:
+    # this should be the current version as of 160722
+    - UNITY3D_VERSION="5.3.5f1" 
 
 # Objective-C support
 language: objective-c
@@ -11,6 +18,18 @@ osx_image: xcode7.3
 xcode_project: libmuse_5.8.0/ios/examples/MuseStatsIos/MuseStatsIos.xcodeproj
 #xcode_scheme: MuseStatsIos
 
+# Install the unity binaries for compilation 
+install:	
+    - wget "http://netstorage.unity3d.com/unity/960ebf59018a/MacEditorInstaller/Unity-${UNITY3D_VERSION}.pkg"
+    - wget "http://netstorage.unity3d.com/unity/960ebf59018a/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-${UNITY3D_VERSION}.pkg"
+    - sudo installer -dumplog -package "Unity-${UNITY3D_VERSION}.pkg" -target /
+    - sudo installer -dumplog -package "UnitySetup-iOS-Support-for-Editor-${UNITY3D_VERSION}.pkg" -target /
+
+############################################
+#  BUILD PHASE
+############################################
+    
+    
 #before_script:
 #- ./scripts/travis/add-key.sh
 
@@ -19,6 +38,11 @@ xcode_project: libmuse_5.8.0/ios/examples/MuseStatsIos/MuseStatsIos.xcodeproj
 
 #after_success:
 #- ./scripts/travis/testflight.sh
+
+############################################
+#   DEPLOYMENT AND NOTIFICATION
+############################################
+
 
 before_deploy:
   - export RELEASE_PKG_FILE=$(ls *)
