@@ -19,13 +19,21 @@ git:
     submodules: false
 
 before_install:
-- chmod a+x ./Scripts/install.sh
-- chmod a+x ./Scripts/build.sh
+#- chmod a+x ./Scripts/install.sh
+#- chmod a+x ./Scripts/build.sh
 # Objective-C support
 language: objective-c
+ 
+# Latest Xcode		
+osx_image: xcode7.3		
 
-# Latest Xcode
-osx_image: xcode7.3
+#xcode_project: Unity.xcodeproj		
+#xcode_scheme: Unity		
+
+#xcode_sdk: iphonesimulator9.3		
+
+rvm:		
+- 2.1.2		
 
 #xcode_project: libmuse_5.8.0/ios/examples/MuseStatsIos/MuseStatsIos.xcodeproj
 #xcode_scheme: MuseStatsIos
