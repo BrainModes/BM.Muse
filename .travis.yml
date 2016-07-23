@@ -3,12 +3,22 @@
 #  ENVIRONMENT SETUP
 ############################################
 
-
 env:
   matrix:
-    # this should be the current version as of 160722
-    - UNITY3D_VERSION="5.3.5f1" 
+    - UNITY3D_VERSION="5.3.5f1"
+ #   - APP_NAME="BM.Games"
+#    - APP_Version=""
+    
+ #   global: 
+    #  - APP_NAME="BM.Games"
 
+# Handle git submodules yourself
+git:
+    submodules: false
+
+before_install:
+- chmod a+x ./Scripts/install.sh
+- chmod a+x ./Scripts/build.sh
 # Objective-C support
 language: objective-c
 
