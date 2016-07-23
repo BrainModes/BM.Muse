@@ -13,11 +13,6 @@ env:
   - PROFILE_UUID=PROVISIONING_PROFILE_UUID
   - APP_Version="160723"
   
- #   - APP_NAME="BM.Games"
-
-    
- #   global: 
-    #  - APP_NAME="BM.Games"
 
 # Handle git submodules yourself
 git:
@@ -32,7 +27,7 @@ language: objective-c
 # Latest Xcode
 osx_image: xcode7.3
 
-xcode_project: libmuse_5.8.0/ios/examples/MuseStatsIos/MuseStatsIos.xcodeproj
+#xcode_project: libmuse_5.8.0/ios/examples/MuseStatsIos/MuseStatsIos.xcodeproj
 #xcode_scheme: MuseStatsIos
 
 # Install the unity binaries for compilation 
