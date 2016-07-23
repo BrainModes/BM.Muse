@@ -3,11 +3,18 @@
 #  ENVIRONMENT SETUP
 ############################################
 
+
+
 env:
-  matrix:
-    - UNITY3D_VERSION="5.3.5f1"
+  global:
+  - APPNAME="BM.Muse_MuseStatsIos"
+  - UNITY3D_VERSION="5.3.5f1"
+  - 'DEVELOPER_NAME="iPhone Distribution: NAME_OF_THE_DEVELOPER (CODE)"'
+  - PROFILE_UUID=PROVISIONING_PROFILE_UUID
+  - APP_Version="160723"
+  
  #   - APP_NAME="BM.Games"
-#    - APP_Version=""
+
     
  #   global: 
     #  - APP_NAME="BM.Games"
@@ -69,12 +76,6 @@ deploy:
     repo: BrainModes/BM.Muse
     tags: true
 #  overwrite: true
-
-env:
-  global:
-  - APPNAME="BM.Muse_MuseStatsIos"
-  - 'DEVELOPER_NAME="iPhone Distribution: NAME_OF_THE_DEVELOPER (CODE)"'
-  - PROFILE_UUID=PROVISIONING_PROFILE_UUID
 
 branches:
   only:
