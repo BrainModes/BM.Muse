@@ -8,10 +8,11 @@
 env:
   global:
   - APPNAME="BM.Muse_MuseStatsIos"
-  - UNITY3D_VERSION="5.3.5f1"
+  - UNITY3D_VERSION="5.4.0f3"
   - 'DEVELOPER_NAME="iPhone Distribution: NAME_OF_THE_DEVELOPER (CODE)"'
   - PROFILE_UUID=PROVISIONING_PROFILE_UUID
   - APP_Version="160723"
+  
   
 
 # Handle git submodules yourself
