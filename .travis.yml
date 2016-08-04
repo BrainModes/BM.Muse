@@ -9,7 +9,7 @@
 env:
   global:
   - APPNAME="BM.Muse_MuseStatsIos"
-  - UNITY3D_VERSION="5.3.5f3"   
+  - UNITY3D_VERSION="5.3.5f1"   
   - 'DEVELOPER_NAME="iPhone Distribution: NAME_OF_THE_DEVELOPER (CODE)"'
   - PROFILE_UUID=PROVISIONING_PROFILE_UUID
   - APP_Version="160723"
