@@ -27,6 +27,21 @@ echo '-------------[BrainModes]----------------- '
 echo "Attempting to build for iOS"
 echo '------------------------------------------ '
 echo ''
+echo ' activating Unity license '
+echo ''
+
+/Applications/Unity/Unity.app/Contents/MacOS/Unity  \ 
+  -quit \
+  -batchmode \
+  -serial ${UNITY3D_SERIAL} 
+  -username ${UNITY3D_USERNAME} 
+  -password ${UNITY3D_PASSWORD}
+
+echo 'done'
+echo ''
+echo 'building project ...'
+echo ''
+  
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchmode \
   -buildTarget iOS \
