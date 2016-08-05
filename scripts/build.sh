@@ -63,9 +63,13 @@ echo ''
 /Applications/Unity/Unity.app/Contents/MacOS/Unity  \ 
   -quit \
   -batchmode \
-  -serial ${UNITY3D_SERIAL} 
-  -username ${UNITY3D_USERNAME} 
-  -password ${UNITY3D_PASSWORD}
+  -serial ${UNITY3D_SERIAL} \
+  -username ${UNITY3D_USERNAME} \
+  -password ${UNITY3D_PASSWORD} \
+  -logFile $(pwd)/unity-activation.log
+  
+echo 'Logs from build'
+cat $(pwd)/unity-activation.log
 
 echo 'done'
 echo ''
